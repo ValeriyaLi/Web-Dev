@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body{
+            background-color: white;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+
+        .header{
+            margin-left: 40px;
+            margin-right: 40px;
+            height: 40px;
+            background-color: black;
+            color: #636C74;
+
+        }
+
+        .header h4{
+            font-size: 17px;
+            padding:auto;
+            padding-top: 10px;
+            padding-left: 60px;
+            font-weight: 100;
+        }
+
+        .lab{
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            margin-left: -470px;
+            font-weight: 100;
+            margin-top: 30px;
+            margin-bottom: -7px;
+        }
+
+        #form {
+            width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            background-color:white;
+            display:flex;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: grey;
+        }
+        
+        #add{
+            padding: 10px;
+            font-size: 16px;
+            background-color: #337AB7;
+            color: white;
+            border: 1px;
+            width: 60px;
+            margin-left: 30px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .delete{
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: 0;
+            height: 20px;
+            width: 20px;
+            border: 0;
+            background-image: url('/lab3/chat/basket.png');
+            background-size: cover;
+        }
+        
+        #allTasks {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        
+        .task {
+            display: flex;
+            align-items: baseline;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            margin-bottom: 0px;
+            margin-left: 360px;
+            width: 550px;
+            height: 40px;
+            border: 1px solid;
+            border-color: rgba(0,0,0,0.2);
+        }
+        
+        .task input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        .task.completed{
+            text-decoration: line-through;
+        }
+
+        input[type="checkbox"].check:checked + .check {
+            background-color: #5294E2;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="body">
+        <div class="header">
+            <h4>ToDo List</h4>
+        </div>
+        <div class="lab">
+            <h2>ToDo List</h2>
+        </div>
+        <div id="form">
+            <input type="text" id="message" placeholder="New Task">
+            <button id="add">Add</button>
+        </div>
+        <div class="tasks">
+            <ul id="allTasks"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
