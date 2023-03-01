@@ -1,0 +1,43 @@
+<h2>Products</h2>
+
+<div>
+  <!--  <div class="categories">-->
+  <!--    <a href="">Category 1</a><br>-->
+
+  <!--    <div *ngFor="let product of products" class="product-category">-->
+  <!--      <a [title]="product.name + ' list'"-->
+  <!--         [routerLink]="['/products', product.category]">Category 2</a>-->
+  <!--    </div>-->
+
+  <!--  </div>-->
+
+  <div *ngFor="let product of products" class="product-info">
+    <h3>
+      <a [title]="product.name + ' details'"
+         [routerLink]="['/products', product.id]">
+        {{ product.name }}
+      </a>
+    </h3>
+    <a href="{{product.source}}"><img [src]="product.image" alt="{{ product.name }}" height = "200" width="250"></a>
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+    <p>
+      Rating: {{product.rating}}
+    </p>
+    <p>
+      Price: {{product.price | currency}}
+    </p>
+
+<!--    <button type="button">-->
+      <share-buttons theme="circles-dark"
+                     [include]="['telegram','whatsapp']"
+                     [showIcon]="true"
+                     [showText]="false"
+                     [url]="product.source">
+      </share-buttons>
+<!--    </button>-->
+
+  </div>
+</div>
+
