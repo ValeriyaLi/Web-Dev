@@ -1,0 +1,103 @@
+/* Set the font family and size for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style for the Albums List heading */
+h1 {
+  color: #6A5ACD;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style for the input field and button */
+fieldset {
+  margin-top: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #6A5ACD;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #6A5ACD;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Style for the list of albums */
+.links {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #800080;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.delete {
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 8px 16px;
+}
+
+/* Style for the loading message */
+h3 {
+  text-align: center;
+  margin-top: 50px;
+  color: #6A5ACD;
+}
+
+
+li{
+  border: solid 1px;
+  margin: 5px;
+  width: 1000px;
+  height: 30px;
+}
+
+.input{
+  margin-left: 380px;
+  width: 500px;
+}
+
+/*li a{*/
+/*  text-decoration: none;*/
+/*  font-size: 20px;*/
+/*  color: #594E68;*/
+/*}*/
+
+/*li a:hover{*/
+/*  text-decoration: underline;*/
+/*}*/
+
+.delete{
+  position: absolute;
+  right: 150px;
+}
