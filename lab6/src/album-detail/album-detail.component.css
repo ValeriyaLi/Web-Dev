@@ -1,0 +1,60 @@
+/* Set the font family and size for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Style for the Go back link */
+a {
+  color: #6A5ACD;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style for the Album heading and title */
+h1 {
+  color: #6A5ACD;
+  margin-top: 50px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #800080;
+}
+
+/* Style for the buttons */
+button {
+  padding: 8px 16px;
+  background-color: #6A5ACD;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Style for the editing section */
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #6A5ACD;
+  margin-right: 10px;
+}
+
+/* Style for the Save button */
+button[type="button"] {
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for the loading message */
+h3 {
+  margin-top: 50px;
+  color: #6A5ACD;
+}

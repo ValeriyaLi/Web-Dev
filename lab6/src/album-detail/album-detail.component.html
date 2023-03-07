@@ -1,0 +1,14 @@
+
+<div *ngIf="loaded">
+  <a routerLink="/albums" class="back">Go back</a>
+  <h1> Album # {{album.id}}</h1>
+<h3>{{album.title}}</h3>
+  <button (click)="goPhotos()">Photos</button>
+  <button type="button" (click)="this.editing=true">Edit</button>
+  <div *ngIf="editing">
+    <h3>New Title</h3>
+    <input type="text" [(ngModel)]="edittedAlbum.title">
+    <button type="button" (click)="saveEdit()">Save</button>
+  </div>
+</div>
+<h3 *ngIf="!loaded">The page is loading...</h3>
