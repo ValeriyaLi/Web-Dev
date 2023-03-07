@@ -1,0 +1,7 @@
+<a [routerLink]="['/albums', photos[0].albumId]" class="back">Go back</a>
+
+<div *ngIf="loaded">
+  <div *ngFor="let photo of photos">
+    <img src="{{ photo.thumbnailUrl }}" alt="{{ photo.title }}" style="margin: 20px">
+  </div>
+</div>
